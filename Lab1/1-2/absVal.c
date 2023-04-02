@@ -6,10 +6,9 @@
  *   Example: absVal(-1) = 1
  *   Legal ops: ! ~ & ^ | + << >>
  */
-int absVal(int x) {
-  if (x < 0) {
-    return -x;
-  } else {
-    return x;
-  }
+int absVal(int num) {
+    int res;
+    
+    res = ~num + 1;
+    return (res);
 }

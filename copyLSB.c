@@ -1,5 +1,4 @@
-int copyLSB(int num)
-{
+int copyLSB(int num) {
     int num;
 
     num <<= 31;

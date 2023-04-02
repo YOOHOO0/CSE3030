@@ -5,6 +5,7 @@
  *   Example: conditional(2,4,5) = 4
  *   Legal ops: ! ~ & ^ | + << >>
  */
-int conditional(int x, int y, int z) {
-  return x ? y : z;
+int conditional(int a, int b, int c) {
+    return (((!(a) << 31) >> 31 & c) \
+    | (~((!(a) << 31) >> 31) & b));
 }
