@@ -11,7 +11,7 @@ static int	ft_pow(int base, int exp) {
 void addNumber(unsigned char* set, int x) {
 	int a = x / 8, b = x % 8;
 
-    if ((set[a] << b) < 0)
+    if ((set[a] << b) >> 7 > 0)
 		  return;
 	set[a] += ft_pow(2, 7 - b);
 }
